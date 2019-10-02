@@ -20,7 +20,7 @@ def crawl(historyList, target_url, limit=25):
     elif len(historyList) > limit:
         print("Délai de réponse trop long")
         return False
-        # Cas où l'on a parcourus l'univers sans succès
+        # Cas où l'on a parcouru l'univers sans succès
     elif historyList[-1] in historyList[:-1]:
         print("l'ensemble des liens ont étés checkés sans succès")
         return False
